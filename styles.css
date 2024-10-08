@@ -1,0 +1,577 @@
+/* Global styles for body */
+body {
+    background-color: #F5F8FB; /* Brighter, cleaner background */
+    margin: 0;
+    font-family: 'Poppins', sans-serif; /* Set Poppins for the entire website */
+    color: #354052; /* Standard text color */
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center items vertically */
+    padding: 20px 50px;
+    background-color: #ffffff; /* Bright white background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: sticky; /* Make the navbar stick to the top */
+    top: 0; /* Stick to the top */
+    z-index: 100; /* Ensure it stays above other elements */
+}
+
+/* Logo Styles */
+.logo {
+    font-size: 1.8rem; /* Larger font size */
+    font-weight: 700;
+    color: #0660CC; /* Bright blue for the logo */
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.logo:hover, .logo:focus {
+    color: #1C75BC; /* Darker blue on hover */
+}
+
+/* Navbar Link Styles */
+.nav-links {
+    list-style: none; /* Remove default list styling */
+    display: flex;
+    gap: 30px; /* Even spacing between links */
+    margin: 0; /* Reset margin */
+}
+
+.nav-links li {
+    margin: 0; /* Reset margin */
+}
+
+/* Link Styles */
+.nav-links a {
+    text-decoration: none; /* Remove underline */
+    color: #354052; /* Darker text color */
+    font-weight: 600;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    padding: 10px 15px; /* Padding for a better clickable area */
+    border-radius: 6px; /* Rounded border for hover effect */
+}
+
+.nav-links a:hover, .nav-links a:focus {
+    color: #0660CC; /* Bright blue on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+    background-color: rgba(6, 96, 204, 0.1); /* Light blue background */
+}
+
+/* Contact Button Link */
+.contact-button-link {
+    background-color: #0660CC; /* Bright blue background */
+    color: #ffffff; /* White text */
+    font-weight: 700; /* Bolder text */
+    padding: 10px 20px;
+    border-radius: 8px; /* Rounded button */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-button-link:hover, .contact-button-link:focus {
+    background-color: #1C75BC; /* Darker blue */
+    transform: scale(1.05); /* Slight enlarge */
+}
+
+/* Responsive Navbar for Small Screens */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack the navbar vertically */
+        align-items: flex-start; /* Align items to the start */
+        padding: 20px 30px;
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack links vertically */
+        gap: 10px; /* Smaller gap between links */
+        align-items: flex-start; /* Left-align links */
+        margin-top: 20px; /* Add spacing above links */
+    }
+
+    .contact-button-link {
+        align-self: center; /* Center the button */
+        width: 100%; /* Full width for better layout */
+        text-align: center; /* Center-align text */
+        margin-top: 20px; /* Spacing above button */
+    }
+}
+
+
+/* Hero Section with Bright Background */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* More spacing between elements */
+    padding: 60px 20px;
+    background-color: #0660CC; /* Primary blue background */
+    border-bottom: 8px solid #1C75BC; /* Border to separate sections */
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 45%;
+    color: #FFFFFF; /* White text for better contrast */
+}
+
+.hero-content h1 {
+    font-size: 60px; /* Larger heading size for impact */
+    color: #FFD700; /* Use vibrant yellow for heading */
+    margin-bottom: 25px;
+    line-height: 1.2;
+    font-weight: 800; /* Bolder for better emphasis */
+}
+
+.hero-content p {
+    font-size: 20px; /* Increase size for readability */
+    line-height: 1.6; /* Adjust line-height for visual appeal */
+    color: #F0F0F0; /* Slightly lighter white for paragraphs */
+    margin-bottom: 25px;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    max-width: 90%; /* Scale image slightly down for better balance */
+    height: auto;
+    clip-path: polygon(
+        25% 0%,  /* Top-left corner */
+        75% 0%,  /* Top-right corner */
+        100% 50%, /* Right-middle */
+        75% 100%, /* Bottom-right corner */
+        25% 100%, /* Bottom-left corner */
+        0% 50%  /* Left-middle */
+    );
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow for depth */
+    transition: transform 0.3s ease-in-out;
+}
+
+.hero-image img:hover {
+    transform: scale(1.05); /* Slight zoom-in effect */
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content, .hero-image {
+        max-width: 100%;
+    }
+}
+
+
+/* Styles for Our Approach Section */
+#approach-section {
+    background-color: #FFFFFF; /* Bright white background for a clean look */
+    padding: 60px 30px; /* Increased padding for better spacing */
+    border-radius: 12px; /* More rounded borders for a modern feel */
+    margin-bottom: 40px; /* Increased space between sections */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05); /* Soft shadow for depth */
+}
+
+.approach-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.approach-text {
+    width: 50%;
+    text-align: left;
+    margin-right: 30px; /* Increased spacing for a balanced layout */
+}
+
+.approach-heading {
+    font-size: 38px; /* Larger heading size for emphasis */
+    color: #1C75BC; /* Bright blue for heading */
+    font-weight: 800; /* Bolder weight for contrast */
+    margin-bottom: 15px;
+}
+
+.approach-paragraph {
+    font-size: 20px; /* Increase font size for better readability */
+    color: #333333; /* Darker text for contrast */
+    line-height: 1.6; /* Improve line-height for better legibility */
+    margin-bottom: 25px;
+}
+
+.approach-image {
+    width: 45%; /* Set the image size for balance */
+    height: auto;
+    border-radius: 16px; /* More rounded edges for visual appeal */
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+    transition: transform 0.3s ease-in-out;
+}
+
+.approach-image:hover {
+    transform: scale(1.05); /* Hover effect for interaction */
+}
+
+/* Styles for Our Impact Section */
+#impact-section {
+    background-color: #FFFFFF; /* Brighter background for clarity */
+    padding: 60px 30px; /* Increased padding */
+    border-radius: 12px;
+    margin-bottom: 40px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05); /* Soft shadow for impact */
+}
+
+.impact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.impact-text {
+    width: 50%;
+    text-align: left;
+    margin-left: 30px; /* Spacing between text and image */
+}
+
+.impact-heading {
+    font-size: 38px; /* Larger font size */
+    color: #1C75BC; /* Bright blue for contrast */
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.impact-paragraph {
+    font-size: 20px;
+    color: #333333;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.impact-image {
+    width: 45%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1); /* Stronger shadow for depth */
+    transition: transform 0.3s ease-in-out;
+}
+
+.impact-image:hover {
+    transform: scale(1.05); /* Zoom-in effect for interactivity */
+}
+
+/* Responsive Design for Approach and Impact Sections */
+@media (max-width: 992px) {
+    .approach-container, .impact-container {
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center; /* Center text alignment */
+    }
+
+    .approach-text, .impact-text {
+        width: 100%;
+        margin: 20px 0; /* Adjust spacing for smaller screens */
+    }
+
+    .approach-image, .impact-image {
+        width: 80%; /* Adjust image size */
+    }
+}
+/* Styling for the Platform Section */
+.platform-section {
+    text-align: center;
+    padding: 50px 30px; /* Adjusted padding for better spacing */
+    background-color: #FFFFFF; /* Bright white background */
+    border-radius: 12px; /* Rounded corners for visual appeal */
+    margin-bottom: 40px; /* Space below the section */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+}
+
+/* Platform Features Container */
+.platform-features {
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: space-between; /* Space out the cards evenly */
+    gap: 30px; /* Increased spacing between cards */
+    align-items: flex-start; /* Align items to the top */
+    flex-wrap: nowrap; /* No wrapping */
+}
+
+/* Individual Feature Cards */
+.feature-card {
+    width: 280px; /* Adjusted width for a sleeker look */
+    height: 380px; /* Adjusted height for proportions */
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px; /* More rounded corners */
+    cursor: pointer;
+    outline: none;
+    border: 2px solid #EAEAEA; /* Light border */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #FFFFFF; /* White background for cards */
+    transition: transform 0.5s ease, box-shadow 0.5s ease; /* Smooth transition on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Soft shadow for card depth */
+}
+
+/* Hover Effect for Feature Cards */
+.feature-card:hover {
+    transform: scale(1.05); /* Slightly enlarges the card on hover */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15); /* Adds a stronger shadow */
+    border-color: #4CBBEC; /* Change border color on hover */
+}
+
+/* Feature Icons */
+.feature-icon {
+    width: 70px; /* Adjust the icon size */
+    height: 70px;
+    margin-bottom: 15px;
+}
+
+/* Feature Headings */
+.feature-card h3 {
+    color: #1C75BC; /* Bright blue for contrast */
+    font-size: 1.3rem; /* Larger font size */
+    font-weight: 700; /* Bolder text */
+    margin: 12px 0; /* Increased margin for spacing */
+}
+
+/* Feature Descriptions */
+.feature-card p {
+    margin: 0;
+    padding: 10px;
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat for body text */
+    font-size: 16px; /* Adjusted font size */
+    color: #354052; /* Darker text for readability */
+}
+
+/* Responsive Design for Product Development Features Section */
+@media (max-width: 992px) {
+    .platform-features {
+        flex-wrap: wrap; /* Wrap into rows */
+        justify-content: center; /* Center-align for smaller screens */
+    }
+
+    .feature-card {
+        margin-bottom: 20px; /* Space between rows */
+    }
+}
+
+@media (max-width: 768px) {
+    .feature-card {
+        width: 90%; /* Full width for each card */
+    }
+
+    .platform-features {
+        flex-direction: column; /* Stack vertically */
+        gap: 30px; /* Increase spacing between stacked cards */
+    }
+}
+
+/* Center Container for the Organizational Functional Section */
+.org-functional-features-container {
+    display: flex;
+    flex-direction: column; /* Stack the heading and grid vertically */
+    align-items: center; /* Center the content horizontally */
+    padding: 60px 30px; /* Adjusted padding around the section */
+    background-color: #FFFFFF; /* Bright white background */
+    border-radius: 12px; /* Rounded corners */
+    margin-bottom: 40px; /* Space between sections */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05); /* Soft shadow for depth */
+}
+
+/* Consistent Heading Style for Organizational Section */
+.org-features-heading {
+    text-align: center; /* Center-align the heading text */
+    font-size: 36px; /* Set larger font size */
+    font-weight: 700; /* Set font weight */
+    color: #0660CC; /* Brighter blue for better contrast */
+    margin-bottom: 40px; /* Space below the heading */
+}
+
+/* Grid Layout for the Organizational Functional Features */
+.org-functional-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for a 3x2 grid */
+    gap: 40px; /* Space between grid items */
+    justify-content: center; /* Center the grid within the parent */
+    align-items: start; /* Align content at the top */
+}
+
+/* Individual Feature Cards */
+.org-feature-card {
+    background-color: #ffffff; /* White background for each card */
+    width: 280px; /* Consistent width */
+    height: 380px; /* Adjust height for icon inclusion */
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Soft shadow */
+    transition: transform 0.5s ease, box-shadow 0.5s ease; /* Smooth transition on hover */
+    display: flex; /* Flexbox for alignment */
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    cursor: pointer;
+}
+
+/* Hover Effect for Organizational Feature Cards */
+.org-feature-card:hover {
+    transform: scale(1.05); /* Slightly enlarges the card on hover */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15); /* Add more emphasis on hover */
+    border-color: #4CBBEC; /* Change border color on hover */
+}
+
+/* Style for Icons */
+.org-feature-icon {
+    width: 70px; /* Set icon width */
+    height: 70px; /* Set icon height */
+    margin-bottom: 20px; /* Space between icon and heading */
+}
+
+/* Text Styles */
+.org-feature-card h3 {
+    color: #1C75BC; /* Brighter blue for contrast */
+    font-size: 1.3rem; /* Increased font size */
+    font-weight: 700; /* Bolder text */
+    margin: 12px 0; /* Space around the heading */
+}
+
+/* Descriptive Text */
+.org-feature-card p {
+    color: #354052; /* Dark text color */
+    margin: 0;
+    padding: 10px;
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat for body text */
+    font-size: 16px; /* Adjusted font size */
+}
+
+/* WCAG conformance: Focusable elements */
+.org-feature-card:focus {
+    outline: 2px solid #4CBBEC; /* Focus outline for keyboard navigation */
+}
+
+/* Responsive Design for Organizational Functional Features Section */
+@media (max-width: 1024px) {
+    .org-functional-features {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .org-functional-features {
+        grid-template-columns: 1fr; /* 1 column for very small screens */
+        gap: 20px;
+    }
+}
+
+/* Contact Section Styles */
+.contact-section {
+    max-width: 700px; /* Increased width for better visual balance */
+    margin: 60px auto; /* Increased margin for spacing */
+    padding: 30px; /* Added padding for a cleaner layout */
+    background-color: #FFFFFF; /* Brighter background */
+    border-radius: 12px; /* Rounded borders for a modern look */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
+    text-align: left; /* Left-aligned text */
+}
+
+.contact-section h2 {
+    text-align: center; /* Center the heading */
+    font-size: 32px; /* Larger heading font size */
+    color: #0660CC; /* Bright blue for better visibility */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; /* Bolder text */
+    margin-bottom: 40px; /* Spacing below the heading */
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 25px; /* Increased spacing between form fields */
+}
+
+.form-group label {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px; /* Spacing below the label */
+    font-weight: 600;
+    color: #354052; /* Darker text for better contrast */
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 15px; /* More padding for a cleaner look */
+    font-size: 16px; /* Larger input text size */
+    border: 1px solid #E0E0E0; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    transition: border 0.3s ease;
+    font-family: 'Montserrat', sans-serif; /* Consistent font for inputs */
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border: 1px solid #0660CC; /* Bright blue focus border */
+    outline: none; /* Remove default outline */
+}
+
+/* Button Styles */
+button.contact-button {
+    align-self: center;
+    padding: 15px 40px; /* Larger button for emphasis */
+    background-color: #0660CC; /* Bright blue for the button */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 8px; /* Rounded button */
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover transition */
+}
+
+button.contact-button:hover {
+    background-color: #1C75BC; /* Slightly darker blue on hover */
+    transform: scale(1.05); /* Small scale effect */
+}
+
+button.contact-button:focus {
+    outline: 2px solid #FFD700; /* Yellow focus outline */
+}
+
+/* Footer Text */
+.footer {
+    text-align: center;
+    padding: 40px; /* Increased padding for a cleaner layout */
+    background-color: #f8f7fa; /* Light background */
+    color: #354052;
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat for footer text */
+    font-size: 14px; /* Adjusted font size for readability */
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer a {
+    color: #0660CC; /* Brighter link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease-in-out;
+}
+
+.footer a:hover {
+    color: #1C75BC; /* Change link color on hover */
+}
+
+.footer a:focus {
+    outline: 2px solid #4CBBEC; /* WCAG compliant focus outline */
+}

@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unified Accessibility</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar with ARIA labels -->
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+        <div class="logo" tabindex="0">Unified Accessibility</div>
+        <ul class="nav-links">
+            <li><a href="#approach-section" role="link" tabindex="0">Mission</a></li>
+            <li><a href="#product-features-heading" role="link" tabindex="0">Product</a></li>
+            <li><a href="#impact-section" role="link" tabindex="0">Impact</a></li>
+            <li><a href="#contact-section" role="link" class="contact-button-link" tabindex="0">Contact</a></li>
+        </ul>
+    </nav>
+    
+
+    <!-- Hero Section -->
+    <section class="hero-section" role="region" aria-labelledby="hero-heading">
+        <div class="hero-content">
+            <h1 id="hero-heading" tabindex="0">Unified Accessibility.</h1>
+            <p tabindex="0">At Unified Accessibility (UACC.AI), we envision a world where digital products and services are accessible to everyone. Our mission is to empower individuals and organizations to create products and services that embrace diversity and inclusivity. With AI at the heart of our solutions and human understanding at the core, we are building the next-generation accessibility platform and expertise to empower organizations to design and build products that delight one and all.</p>
+        </div>
+        <div class="hero-image">
+            <img src="ai_human_collaboration.png" alt="AI and Human Collaboration Image">
+        </div>
+    </section>
+    
+
+<!-- Our Approach Section -->
+<section id="approach-section" role="region" aria-labelledby="approach-heading">
+    <div class="approach-container">
+        <div class="approach-text">
+            <h2 id="approach-heading" class="approach-heading">Our Approach</h2>
+            <p class="approach-paragraph">
+                At Unified Accessibility (UACC.AI), we believe that true innovation comes from the combination of AI and Human Intelligence (HI). While AI delivers speed, precision, and scalability, HI—the wisdom, experience, and empathy of people—adds depth and understanding. Together, they form a powerful force that drives our mission to build inclusive, accessible products and services.
+            </p>
+        </div>
+        <img src="approach_image.jpg" alt="Placeholder image for Our Approach" class="approach-image">
+    </div>
+</section>
+
+<!-- Our Impact Section -->
+<section id="impact-section" role="region" aria-labelledby="impact-heading">
+    <div class="impact-container">
+        <img src="our_impact.png" alt="Placeholder image for Our Impact" class="impact-image">
+        <div class="impact-text">
+            <h2 id="impact-heading" class="impact-heading">Our Impact</h2>
+            <p class="impact-paragraph">
+                At Unified Accessibility (UACC.AI), we transform how organizations approach accessibility, empowering them to create digital products and services that truly serve everyone. By combining the power of AI with the empathy and insight of Human Intelligence (HI), we help businesses deliver inclusive experiences that are not only compliant with accessibility standards but also designed to delight and engage all users.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Product Development Features Section -->
+<section class="platform-section" role="region" aria-labelledby="product-features-heading">
+    <h2 id="product-features-heading" tabindex="0">Product Development Features</h2>
+    <div class="platform-features" role="list">
+        <div class="feature-card" role="listitem" tabindex="0">
+            <img src="icon1.png" alt="Customer Experience Icon" class="feature-icon">
+            <h3 tabindex="0">Customer Experience Journey Evaluation</h3>
+            <p tabindex="0">AI-powered insights for Product Owners to analyze and refine customer journeys, ensuring they are accessible and inclusive for all users.</p>
+        </div>
+        <div class="feature-card" role="listitem" tabindex="0">
+            <img src="icon2.png" alt="Design Usability Icon" class="feature-icon">
+            <h3 tabindex="0">Design Usability & Simplicity Insights</h3>
+            <p tabindex="0">AI-powered insights for Designers to evaluate the usability and accessibility of designs.</p>
+        </div>
+        <div class="feature-card" role="listitem" tabindex="0">
+            <img src="icon3.png" alt="Accessible Code Icon" class="feature-icon">
+            <h3 tabindex="0">Accessible Code Development</h3>
+            <p tabindex="0">Comprehensive resources for Engineers on writing accessible code, following global standards such as WCAG to ensure digital assets are compliant.</p>
+        </div>
+        <div class="feature-card" role="listitem" tabindex="0">
+            <img src="icon4.png" alt="Automated Testing Icon" class="feature-icon">
+            <h3 tabindex="0">Automated Accessibility Testing</h3>
+            <p tabindex="0">Quality Assurance Engineers can leverage automated tools to test websites, ensuring accessibility compliance.</p>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Organizational Functional Features Section -->
+    <section role="region" aria-labelledby="org-features-heading" class="org-functional-features-container">
+        <!-- Heading for Organizational Functional Features -->
+        <h2 id="org-features-heading" class="org-features-heading" tabindex="0">Organizational Functional Features</h2>
+        
+        <!-- Organizational Functional Features Cards -->
+        <div class="org-functional-features">
+            <!-- Risk & Compliance Management Card -->
+            <div class="org-feature-card">
+                <img src="icon5.png" alt="Risk & Compliance Management Icon" class="feature-icon">
+                <h3>Risk & Compliance Management</h3>
+                <p>Tools for Risk and Compliance Teams to track, manage, and report on accessibility conformance risks, helping meet legal and organizational standards while mitigating risks.</p>
+            </div>
+            
+            <!-- Accessible Procurement Processes Card -->
+            <div class="org-feature-card">
+                <img src="icon6.png" alt="Accessible Procurement Processes Icon" class="feature-icon">
+                <h3>Accessible Procurement Processes</h3>
+                <p>Procurement Teams can access guidance on procuring accessible products and services that meet both organizational goals and accessibility regulations.</p>
+            </div>
+    
+            <!-- Workplace Accommodation Support Card -->
+            <div class="org-feature-card">
+                <img src="icon7.png" alt="Workplace Accommodation Support Icon" class="feature-icon">
+                <h3>Workplace Accommodation Support</h3>
+                <p>Features for HR Teams to handle reasonable accommodation requests, ensuring that workplaces are inclusive, and support for employees with disabilities is comprehensive and well-managed.</p>
+            </div>
+            
+            <!-- Inclusive Talent Acquisition Card -->
+            <div class="org-feature-card">
+                <img src="icon8.png" alt="Inclusive Talent Acquisition Icon" class="feature-icon">
+                <h3>Inclusive Talent Acquisition</h3>
+                <p>Tools for Talent Acquisition Leaders to create accessible job descriptions and recruitment platforms, ensuring everyone, regardless of ability, can apply and participate in the hiring process.</p>
+            </div>
+            
+            <!-- IT Onboarding & Desktop Support Card -->
+            <div class="org-feature-card">
+                <img src="icon9.png" alt="IT Onboarding & Desktop Support Icon" class="feature-icon">
+                <h3>IT Onboarding & Desktop Support</h3>
+                <p>Resources for IT Departments on how to onboard employees with disabilities and provide accessible desktop support, ensuring seamless integration into the workplace.</p>
+            </div>
+        </div>
+    </section>
+    
+
+  <!-- Contact Section -->
+<section id="contact-section" class="contact-section">
+    <h2>Contact Us</h2>
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="contact-button">Send</button>
+    </form>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <p>© 2024 Unified Accessibility (UACC.AI). All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
